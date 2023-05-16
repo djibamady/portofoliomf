@@ -1,0 +1,108 @@
+  /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles pour le header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 50px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Styles pour le logo */
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo{
+    width: 100px;
+}
+
+/* Styles pour la nav */
+.header__nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header__nav ul li {
+  margin-left: 20px;
+}
+
+.header__nav ul li:first-child {
+  margin-left: 0;
+}
+
+.header__nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.header__nav ul li a:hover {
+  color: #c0c0c0;
+}
+
+.hearder-text{
+    font-size: 30px;
+    margin-top: 20%;
+
+}
+.hearder-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+
+}
+.hearder-text h1 span{
+    color: rgb(20, 100, 220);
+}
+
+/* Styles pour le menu toggle */
+.header__menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  z-index: 1000;
+}
+
+.header__menu-toggle span {
+  display: block;
+  background-color: #fff;
+  height: 2px;
+  width: 25px;
+  margin-bottom: 5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.header__menu-toggle span:last-child {
+  margin-bottom: 0;
+}
+
+.header__menu-toggle.open span:first-child {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.header__menu-toggle.open span:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.header__menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+

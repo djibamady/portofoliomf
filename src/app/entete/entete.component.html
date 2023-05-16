@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <app-header></app-header>
+
+  <header class="header">
+  <div class="header__logo"> <img src="../../assets/img/logo.jpg" alt="logo" class="logo"></div>
+
+    <nav class="header__nav"  ng-show="showMe" id="header__nav">
+
+      <ul id="header_list" *ngIf="showMenu && noShow"  >
+        <li><a routerLink="/" (click)="noShowI()">Accueil</a></li>
+        <li><a routerLink="/projets" (click)="noShowI()">Projects</a></li>
+        <li><a  routerLink="/technos" (click)="noShowI()">Technologies</a></li>
+        <li><a  routerLink="/about" (click)="noShowI()">À propos</a></li>
+        <li><a  routerLink="/contact" (click)="noShowI()">Contact</a></li>
+      </ul>
+    </nav>
+
+
+
+
+<button class="header__menu-toggle" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+<script>
+
+
+const mediaQuery = window.matchMedia('(max-width: 767px)');
+const inf = document.getElementsByClassName('.list');
+
+function handleViewportChange(e) {
+  if (e.matches) {
+   inf.style.visibility = 'hidden';
+  }
+}
+
+mediaQuery.addEventListener('change', handleViewportChange);
+handleViewportChange(mediaQuery); // initial call to set the correct background color on page load
+
+</script>
+
+</body>
+</html>
+

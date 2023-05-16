@@ -1,0 +1,18 @@
+<header class="header">
+
+    <nav [class.active]="showMenu"  ng-show="showMe" id="header__nav" class="header__nav">
+  <ul>
+    <li><a routerLink="/">Accueil</a></li>
+    <li><a routerLink="/projets">Projects</a></li>
+    <li><a  routerLink="/technos">Technologies</a></li>
+    <li><a  routerLink="/about">À propos</a></li>
+    <li><a  routerLink="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+<button class="hamburger" (click)="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+</header>

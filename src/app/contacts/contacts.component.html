@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+    <!-- Section principale de la page de contact -->
+<!--<section class="contact">
+  <h2 class="contactmoi" >Contactez-moi !</h2>
+  <form>
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Envoyer</button>
+
+  </form>
+
+  <div id="map">
+
+  </div>
+  </section>
+  -->
+  <br><br><br>
+  <br><br>
+  <br><br><br>
+  <br><br>
+   <!--========== CONTACT US ==========-->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle contact__initial"></span>
+                    <h2 class="section-title contact__initial">Contactez moi</h2>
+                    <p class="contact__description">Si vous souhaitez échanger avec moi pour plus de details , contactez-moi sur le 06 79 68 66 81 je suis disponible 7j / 7 de 6h à 22 ou par mail <span style="border-bottom: 1px solid white ;">mohamedfofana35700@gmail.com</span>.</p>
+                </div>
+
+                <div class="contact__button">
+                    <a href="#" class="button">Contactez nous</a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </section>
+
+<script>
+/* Script pour initialiser la carte Google Maps */
+function initMap() {
+  const mapElement = document.getElementById("map");
+  const mapOptions = {
+    center: { lat: 37.7749, lng: -122.4194 },
+    zoom: 10,
+  };
+  const map = new google.maps.Map(mapElement, mapOptions);
+}
+
+/* Script pour soumettre le formulaire de contact */
+const form = document.querySelector("form");
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  const data = {
+    name,
+    email,
+    message,
+  };
+  console.log(data); // envoyer les données à votre serveur ou à un service de messagerie tiers
+}
+
+
+</script>
+</body>
+</html>

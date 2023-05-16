@@ -1,0 +1,71 @@
+/* Styles pour la section de contact */
+/*
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  background: #121d1b;
+  padding-top: 50px;
+}
+ .contactmoi{
+      direction: ltr;
+    }
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.contact button {
+  background-color: #0080ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.contact button:hover {
+  background-color: #0059b3;
+}
+*/
+/* Styles pour la carte Google Maps */
+#map {
+  height: 400px;
+  margin-top: 50px;
+}
+/*con*/
+/*========== CONTACT ==========*/
+.contact__container{
+  text-align: center;
+  padding: 50px;
+  text-align: center;
+  background: white;
+  color: black;
+  padding-top: 10px;
+}
+

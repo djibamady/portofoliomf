@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <!-----Service section Start----->
+     <div id="services">
+        <div class="contenier">
+
+            <!--suite-->
+             <div class="services-list">
+                <div>
+                  <app-techojava>
+                  </app-techojava>
+                  <a routerLink="/java"  (click)="onClickafficherJava()" class="lien">Voir tableau</a>
+                </div>
+                <div>
+                  <app-techojavaee>
+                  </app-techojavaee>
+                  <a routerLink="/javaee"  (click)="onClickafficherJavaee()" class="lien">Voir tableau</a>
+                </div>
+                <div>
+                  <app-techophp>
+                  </app-techophp>
+                  <a routerLink="/php"  (click)="onClickafficherPhp()" class="lien">Voir tableau</a>
+                </div>
+            </div>
+
+
+            <div *ngIf="afficherJava">
+                    <app-competence-java></app-competence-java>
+             </div>
+
+            <div *ngIf="afficherJavaee">
+                    <app-competence-java-ee></app-competence-java-ee>
+             </div>
+              <div *ngIf="afficherPhp">
+                    <app-competence-php></app-competence-php>
+             </div>
+            <div class="services-list">
+                <div>
+                  <app-techopython>
+                  </app-techopython>
+                  <a routerLink="/python"  (click)="onClickafficherPython()" class="lien">Voir tableau</a>
+                </div>
+                <div>
+                  <app-techoangular>
+                  </app-techoangular>
+                  <a routerLink="/angular"  (click)="onClickafficherAngular()" class="lien">Voir tableau</a>
+                </div>
+                <div>
+                  <app-techosymfony>
+                  </app-techosymfony>
+                  <a routerLink="/symfony"  (click)="onClickafficherSymfony()" class="lien">Voir tableau</a>
+                </div>
+            </div>
+            <div *ngIf="afficherPython">
+                    <app-competence-python></app-competence-python>
+             </div>
+
+            <div *ngIf="afficherAngular">
+                    <app-competence-angular></app-competence-angular>
+             </div>
+              <div *ngIf="afficherSymfony">
+                    <app-competence-symfony></app-competence-symfony>
+             </div>
+        </div>
+     </div>
+
+      <!----services section end ----->
+</body>
+</html>
